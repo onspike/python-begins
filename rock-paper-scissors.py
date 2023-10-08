@@ -16,9 +16,13 @@ def check_results(player, computer):
     elif player == "paper" and computer == "rock":
        return "Paper suffacates rock. YOU KILLED MOCHI, HOW DARE YOU."
     elif player == "scissors" and computer == "paper":
-       return "Scissors cut paper."
+       return "Scissors cut paper. NOOOOOOOOOOO!!! MOCHI!! wait what, that was Lychee(bruh^10000)."
     else:
-      return "YOU DIED TO THE CATS OF RPS"   
+      return "YOU DIED TO THE CATS OF RPS"       
 
-result = check_results("paper", "scissors") 
+player_choice = input("Enter a choice (rock, paper or scissors): " )
+options = ["rock", "paper", "scissors"]
+computer_choice = random.choice(options)
+result = check_results(player_choice, computer_choice) 
 print(result)
+
