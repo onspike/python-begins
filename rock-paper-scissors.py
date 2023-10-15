@@ -10,7 +10,7 @@ def get_choice():
 def check_results(player, computer):
     print(f"You chose {player}, computer chose {computer}")
     if player == computer:
-      return print("It's a tie")
+      return print("It's a tie, maybe.....MOCHI CALL THE LYCHEE")
     elif player == "rock" and computer == "scissors":
        return "Rock smashes scissors. Oh no, our table, its broken!"
     elif player == "paper" and computer == "rock":
@@ -20,9 +20,15 @@ def check_results(player, computer):
     else:
       return "YOU DIED TO THE CATS OF RPS"       
 
+## learning step 1
+check_results("rock", "paper") 
+
+## learning step 2
 player_choice = input("Enter a choice (rock, paper or scissors): " )
 options = ["rock", "paper", "scissors"]
 computer_choice = random.choice(options)
 result = check_results(player_choice, computer_choice) 
 print(result)
 
+## learning step 3
+choices = get_choice()
