@@ -20,15 +20,6 @@ def check_results(player, computer):
     else:
       return "YOU DIED TO THE CATS OF RPS"       
 
-## learning step 1
-check_results("rock", "paper") 
-
-## learning step 2
-player_choice = input("Enter a choice (rock, paper or scissors): " )
-options = ["rock", "paper", "scissors"]
-computer_choice = random.choice(options)
-result = check_results(player_choice, computer_choice) 
-print(result)
-
-## learning step 3
 choices = get_choice()
+results = check_results(choices["player"], choices["computer"])
+print(results)
